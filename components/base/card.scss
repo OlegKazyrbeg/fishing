@@ -1,0 +1,41 @@
+.category-card{
+    width: 267px;
+
+    & img{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        background-color: #EEEEEE;
+    }
+
+    &-description{
+        padding-top: 16px;
+        width: 100%;
+    }
+
+    &-bottom{
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-name{
+        color: var(--color2);
+        font-family: var(--font2);
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    &-price{
+        font-size: 24px;
+        font-weight: 600;
+        color: var(--color3);
+    }
+
+    &-button{
+        font-size: 12px;
+        padding: 13px 20px;
+        border: 2px solid #EEE;
+        background: rgba(217, 217, 217, 0.00);
+        font-family: var(--font2);
+    }
+}

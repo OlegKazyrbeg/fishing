@@ -1,0 +1,101 @@
+.more{
+    background-color: var(--color1);
+    padding: 65px 0;
+
+    &-title{
+        font-size: 36px;
+        color: var(--color5);
+        text-align: center;
+        font-weight: 600;
+        margin-bottom: 45px;
+    }
+
+    &-content{
+        justify-content: center;
+        gap: 88px;
+        flex-wrap: wrap;
+    }
+
+    &-item{
+        flex: 0 0 341px;
+
+        &:nth-child(1){
+            background:linear-gradient(180deg, rgba(249,246,241,0) 10%, rgba(0,0,0,0.7467029047947304) 80%), url('/more1.svg') center/cover no-repeat;
+        }
+
+        &:nth-child(2){
+            background:linear-gradient(180deg, rgba(249,246,241,0) 10%, rgba(0,0,0,0.7467029047947304) 80%), url('/more2.svg') center/cover no-repeat;
+        }
+
+        &:nth-child(3){
+            background:linear-gradient(180deg, rgba(249,246,241,0) 10%, rgba(0,0,0,0.7467029047947304) 80%), url('/more3.svg') center/cover no-repeat;
+        }
+
+        & img{
+            width: 100%;
+        }
+
+        &:hover .more-description{
+            &-title{
+                transform: translateY(-40px);
+            }
+
+            &-text{
+                opacity: 1;
+                transform: translateY(-40px);
+            }
+        }
+    }
+
+    &-description{
+        padding: 40px 20px 120px 20px;
+        transform: translateY(120px);
+        text-align: right;
+
+        &-title{
+            font-size: 24px;
+            text-align: right;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--color5);;
+            transition: 1s;
+        }
+
+        &-text{
+            color: var(--color5);
+            font-family: var(--font2);
+            line-height: 1.5;
+            font-size: 14px;
+            transform: translateY(-10px);
+            opacity: 0;
+            transition: 0.8s ease;
+        }
+    }
+}
+
+@media (max-width: 1200px){
+    .container{
+        padding: 0 15px;
+    }
+
+    .more{
+        &-content{
+            gap: 15px;
+        }
+        &-item{
+            flex: 0 0 49%;
+        }
+    }
+}
+
+@media (max-width: 789px){
+    .more{
+        &-content{
+            gap: 15px;
+        }
+        &-item{
+            flex: 0 0 100%;
+        }
+    }
+}

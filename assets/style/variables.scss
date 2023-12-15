@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Roboto:wght@400;500&display=swap');
+
+:root{
+    --font1: 'Oswald', sans-serif;
+    --font2: 'Roboto', sans-serif;
+
+    --color1: #222222;
+    --color2: #5B5B5B;
+    --color3: #EEBA00;
+    --color5: #ffff;
+
+
+    --fw400: 400;
+    --fw600: 600;
+}
+
+.row{
+    display: flex;
+}

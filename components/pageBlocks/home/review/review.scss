@@ -1,0 +1,66 @@
+.review-slider .swiper-button-prev, .review-slider .swiper-button-next{
+    display: none;
+}
+
+.review{
+    position: relative;
+    top: 150px;
+    margin-top: 65px;
+    padding: 65px 0 97px 0;
+    background: url('/backmessage.webp') center/cover no-repeat;
+
+    &-title{
+        font-size: 32px;
+        font-weight: 600;
+        color: var(--color1);
+        margin-bottom: 55px;
+        text-align: center;
+    }
+
+    &-card{
+        width: 575px;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+
+        & ul{
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        &-text{
+            font-size: 20px;
+            color: var(--color2);
+            line-height: 1.5;
+        }
+    }
+
+    &-slider .swiper{
+        width: 70%;
+
+        &-slide{
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 789px){
+    .review{
+        top: 65px;
+    }
+}
+
+@media (max-width: 576px){
+    .review-slider .swiper{
+        width: 100%;
+    }
+    .review-card{
+        width: 90%;
+        
+        &-text{
+            font-size: 16px;
+        }
+    }
+}
+

@@ -1,0 +1,78 @@
+.popular-slider .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    content: url("/sliderarrow.svg");
+}
+
+.popular-slider .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    content: url("/sliderarrow.svg");
+    transform: rotate(180deg);
+}
+
+.popular-slider .swiper-button-prev, .swiper-button-next{
+    transform: translateY(-5px);
+}
+.popular-slider .swiper{
+    top: 150px;
+
+    &-slide{
+        display: flex;
+
+        & .category-card{
+            width: 370px;
+        }
+    }
+}
+
+.popular{
+    padding: 50px 0 0 0;
+    background: url("/popular.svg") center/cover no-repeat;
+
+    &-title{
+        font-size: 64px;
+        font-weight: 600;
+        color: var(--color5);
+        text-align: right;
+    }
+}
+
+@media (max-width: 789px){
+    .popular{
+        background: none;
+    }
+
+    .popular-title{
+        font-size: 54px;
+        color: var(--color1);
+    }
+
+    .popular-slider .swiper{
+        top: 45px;
+
+        &-slide{
+            & .category-card{
+                &-name{
+                    font-size: 14px;
+                }
+    
+                &-bottom{
+                    flex-direction: column;
+                    align-items: start;
+                    gap: 15px
+                }
+    
+                &-price{
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+
+    .popular-slider .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after,
+    .popular-slider .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+        display: none;
+    }
+}
+
+@media (max-width: 579px){
+    .popular{
+        padding: 0;
+}}

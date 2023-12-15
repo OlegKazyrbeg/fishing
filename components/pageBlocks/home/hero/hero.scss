@@ -1,0 +1,48 @@
+.hero{
+    background: url('/hero-image.svg')center/cover no-repeat;
+    min-height: 70vh;
+
+    &-content{
+        text-align: center;
+        margin-top: 200px;
+    }
+
+    &-title{
+        color: var(--color5);
+        font-size: 64px;
+        font-weight: var(--fw600);
+        margin-bottom: 50px;
+
+        & span{
+            margin-top: 8px;
+            font-size: 48px;
+            display: block;
+            font-weight: var(--fw600);
+        }
+    }
+}
+
+@media (max-width: 789px){
+    .hero{
+        min-height: 50vh;
+        &-title{
+            font-size: 48px;
+
+            & span{
+                font-size: 32px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px){
+    .hero{
+        &-title{
+            font-size: 40px;
+
+            & span{
+                font-size: 24px;
+            }
+        }
+    }
+}
