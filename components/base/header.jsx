@@ -11,7 +11,10 @@ const Header = () => {
         <header className="header">
             <div className="container">
                 <div className="header-content row">
-                <Link to={PATHS.MAIN} className="logo">Аппетитная <br /> щучка</Link>
+                <Link to={PATHS.MAIN} className="logo">
+                    <img src="/logo.png" alt="logo" width={50}/>
+                    Аппетитная <br /> щучка
+                </Link>
                 <nav>
                     <ul className={`header-nav row ${toggleMenu ? "active" : ''}`}>
                         <Link to={PATHS.ABOUT} className="header-nav-item">О нас</Link>
