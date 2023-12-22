@@ -1,19 +1,48 @@
 .footer{
     position: relative;
-    margin-top: 65px;
     top: 150px;
-    padding: 30px 0;
     background: var(--color1);
 
     &-content{
-        justify-content: center;
-        gap: 10px;
         color: var(--color5);
+
+        & .footer-nav{
+            gap: 60px;
+            font-size: 22px;
+            justify-content: center;
+            padding: 20px 0;
+            border-top: 2px solid var(--color2);
+        }
+
+        &-top{
+            text-align: center;
+            padding: 0 0 20px 0;
+        }
+    }
+
+    &-text{
+        font-size: 18px;
+    }
+
+    &-logo img{
+        width: 130px;
     }
 }
 
 @media (max-width: 789px){
     .footer{
         top: 65px;
+
+        &-text{
+            font-size: 12px;
+        }
+
+        &-content .footer-nav{
+            gap: 30px;
+        }
+
+        &-nav-item{
+            font-size: 16px;
+        }
     }
 }
