@@ -6,7 +6,7 @@ const Hero = () => {
         <section className="hero row">
             <div className="container">
                 <div className="hero-content">
-                    <h1 className="hero-title">Улови свою мечту <br /> <span>Все для рыбалки в одном магазине!</span> </h1>
+                    <h1 className="hero-title">Свежие морепродукты<br /> <span>Прямо на вашем столе!</span> </h1>
                     <PrimaryButton/>
                 </div>
             </div>

@@ -13,13 +13,13 @@ const ProductCategory = () => {
             <div className="product-category-tabs row">
                 <button 
                     onClick={() => toggleTab(1)} 
-                    className={toggleState === 1 ? "product-category-tabs-button active" : "product-category-tabs-button"}>УДОЧКИ</button>
+                    className={toggleState === 1 ? "product-category-tabs-button active" : "product-category-tabs-button"}>РЫБА</button>
                 <button 
                     onClick={() => toggleTab(2)} 
-                    className={toggleState === 2 ? "product-category-tabs-button active" : "product-category-tabs-button"}>КАТУШКИ</button>
+                    className={toggleState === 2 ? "product-category-tabs-button active" : "product-category-tabs-button"}>КАЛЬМАРЫ</button>
                 <button 
                     onClick={() => toggleTab(3)} 
-                    className={toggleState === 3 ? "product-category-tabs-button active" : "product-category-tabs-button"}>ЛОДКИ</button>
+                    className={toggleState === 3 ? "product-category-tabs-button active" : "product-category-tabs-button"}>КРАБЫ</button>
             </div>
             <div className="product-category-content">
                 <div onClick={() => toggleTab(1)} 

@@ -1,10 +1,12 @@
 .more{
     background-color: var(--color1);
+    background-color: white;
     padding: 65px 0;
 
     &-title{
         font-size: 36px;
         color: var(--color5);
+        color: var(--color1);
         text-align: center;
         font-weight: 600;
         margin-bottom: 45px;
@@ -20,15 +22,15 @@
         flex: 0 0 341px;
 
         &:nth-child(1){
-            background:linear-gradient(180deg, rgba(249,246,241,0) 10%, rgba(0,0,0,0.7467029047947304) 80%), url('/more1.svg') center/cover no-repeat;
+            background:linear-gradient(180deg, rgba(249,246,241,0) 10%, rgba(0,0,0,0.7467029047947304) 80%), url('public/more4.webp') center/cover no-repeat;
         }
 
         &:nth-child(2){
-            background:linear-gradient(180deg, rgba(249,246,241,0) 10%, rgba(0,0,0,0.7467029047947304) 80%), url('/more2.svg') center/cover no-repeat;
+            background:linear-gradient(180deg, rgba(249,246,241,0) 10%, rgba(0,0,0,0.7467029047947304) 80%), url('public/more5.jpg') center/cover no-repeat;
         }
 
         &:nth-child(3){
-            background:linear-gradient(180deg, rgba(249,246,241,0) 10%, rgba(0,0,0,0.7467029047947304) 80%), url('/more3.svg') center/cover no-repeat;
+            background:linear-gradient(180deg, rgba(249,246,241,0) 10%, rgba(0,0,0,0.7467029047947304) 80%), url('public/more6.jpg') center/cover no-repeat;
         }
 
         & img{
