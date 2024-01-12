@@ -1,4 +1,4 @@
-import PrimaryButton from '../../../../ui/buttons/primaryButton';
+import PrimaryButton from '../../../ui/buttons/primaryButton';
 import './hero.scss'
 
 const Hero = () => {

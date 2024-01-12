@@ -18,24 +18,14 @@ const SwiperPopular = () => {
               },
         }}
       >
-        <SwiperSlide>
-            <Card/>
-        </SwiperSlide>
-        <SwiperSlide>
-            <Card/>
-        </SwiperSlide>
-        <SwiperSlide>
-            <Card/>
-        </SwiperSlide>
-        <SwiperSlide>
-            <Card/>
-        </SwiperSlide>
-        <SwiperSlide>
-            <Card/>
-        </SwiperSlide>
-        <SwiperSlide>
-            <Card/>
-        </SwiperSlide>
+        {new Array(6).fill(0).map(() =>{
+            return (
+                <SwiperSlide>
+                    <Card/>
+                </SwiperSlide>
+            )
+        })}
+
     </Swiper>
      );
 }
