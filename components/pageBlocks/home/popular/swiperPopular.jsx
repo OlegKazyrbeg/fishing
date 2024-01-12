@@ -1,8 +1,19 @@
 import { Navigation, A11y, Autoplay, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Card from '../../../base/card';
+import axios from 'axios'
+import React, { useState, useEffect } from 'react';
 
 const SwiperPopular = () => {
+
+    const [SliderItem, setSliderItem] = useState([]);
+
+    useEffect(() => {
+        axios.get('http://localhost:3001/sliderItemPopular')
+          .then(response => setSliderItem(response.data))
+          .catch(error => console.log(error));
+      }, []);
+
     return ( 
         <Swiper
         modules={[Navigation, A11y, Autoplay]}
@@ -18,14 +29,16 @@ const SwiperPopular = () => {
               },
         }}
       >
-        {new Array(6).fill(0).map(() =>{
+        {SliderItem.map(item => {
             return (
-                <SwiperSlide>
-                    <Card/>
+                <SwiperSlide key={item.id}>
+                    <Card
+                        image={item.image}
+                        name={item.name}
+                        price={item.price}/>
                 </SwiperSlide>
             )
         })}
-
     </Swiper>
      );
 }

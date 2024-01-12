@@ -1,0 +1,114 @@
+{
+    "sliderItemPopular":[
+    {
+      "image": "/public/card-image1.webp",
+      "name": "Барабуля черноморская",
+      "price": "260 руб.",
+      "id": 1
+    },
+    {
+      "image": "/public/card-image2.jpg",
+      "name": "Крабы",
+      "price": "400 руб.",
+      "id": 2
+    },
+    {
+      "image": "/public/card-image3.svg",
+      "name": "Кальмары",
+      "price": "600 руб.",
+      "id": 3
+    },
+    {
+      "image": "/public/card-image4.svg",
+      "name": "Креветки",
+      "price": "300 руб.",
+      "id": 4
+    }
+    ],
+
+    "itemCategory":[
+      {
+        "type": "fish",
+        "image": "/public/card-image1.webp",
+        "name": "Барабуля черноморская",
+        "price": "260 руб.",
+        "id": 1
+      },
+      {
+        "type": "fish",
+        "image": "/public/card-image1.webp",
+        "name": "Барабуля черноморская",
+        "price": "260 руб.",
+        "id": 2
+      },
+      {
+        "type": "fish",
+        "image": "/public/card-image1.webp",
+        "name": "Барабуля черноморская",
+        "price": "260 руб.",
+        "id": 3
+      },
+      {
+        "type": "fish",
+        "image": "/public/card-image1.webp",
+        "name": "Барабуля черноморская",
+        "price": "260 руб.",
+        "id": 4
+      },
+
+
+
+      {
+        "type": "calmar",
+        "image": "/public/card-image3.svg",
+        "name": "Кальмары",
+        "price": "600 руб.",
+        "id": 1
+      },
+      {
+        "type": "calmar",
+        "image": "/public/card-image3.svg",
+        "name": "Кальмары",
+        "price": "600 руб.",
+        "id": 2
+      },
+
+
+      
+      {
+        "type":"crab",
+        "image": "/public/card-image2.jpg",
+        "name": "Крабы",
+        "price": "400 руб.",
+        "id": 1
+      },
+      {
+        "type":"crab",
+        "image": "/public/card-image2.jpg",
+        "name": "Крабы",
+        "price": "400 руб.",
+        "id": 2
+      },
+      {
+        "type":"crab",
+        "image": "/public/card-image2.jpg",
+        "name": "Крабы",
+        "price": "400 руб.",
+        "id": 3
+      },
+      {
+        "type":"crab",
+        "image": "/public/card-image2.jpg",
+        "name": "Крабы",
+        "price": "400 руб.",
+        "id": 4
+      },
+      {
+        "type":"crab",
+        "image": "/public/card-image2.jpg",
+        "name": "Крабы",
+        "price": "400 руб.",
+        "id": 5
+      }
+    ]
+}   
