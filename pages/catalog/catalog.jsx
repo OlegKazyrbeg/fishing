@@ -1,8 +1,11 @@
+import classes from '../../pages/catalog/catalog.module.scss'
+import CatalogContent from '../../components/pageBlocks/catalog/catalogContent';
+
 const Catalog = () => {
     return ( 
-        <>
-            <p>Catalog</p>
-        </>
+        <main className={classes.catalog}>
+            <CatalogContent/>
+        </main>
      );
 }
  

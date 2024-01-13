@@ -1,3 +1,4 @@
+import PrimaryButton from '../ui/buttons/primaryButton';
 import './footer.scss'
 
 const Footer = () => {

@@ -1,11 +1,10 @@
-import { Navigation, A11y, Autoplay, Pagination } from 'swiper/modules';
+import { Navigation, A11y, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Card from '../../../base/card';
 import axios from 'axios'
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 const SwiperPopular = () => {
-
     const [SliderItem, setSliderItem] = useState([]);
 
     useEffect(() => {

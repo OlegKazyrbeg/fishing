@@ -3,7 +3,9 @@ import { useState, useEffect } from "react";
 import axios from 'axios'
 
 const ProductCategory = () => {
-    const [toggleState, setToggleState] = useState(1)
+    const [toggleState, setToggleState] = useState(0)
+
+    const categories = ['рыба', 'кальмары', 'крабы']
 
     const toggleTab = (index) =>{
         setToggleState(index)
@@ -46,19 +48,17 @@ const ProductCategory = () => {
     return ( 
         <div className="product-category">
             <div className="product-category-tabs row">
-                <button 
-                    onClick={() => toggleTab(1)} 
-                    className={toggleState === 1 ? "product-category-tabs-button active" : "product-category-tabs-button"}>РЫБА</button>
-                <button 
-                    onClick={() => toggleTab(2)} 
-                    className={toggleState === 2 ? "product-category-tabs-button active" : "product-category-tabs-button"}>КАЛЬМАРЫ</button>
-                <button 
-                    onClick={() => toggleTab(3)} 
-                    className={toggleState === 3 ? "product-category-tabs-button active" : "product-category-tabs-button"}>КРАБЫ</button>
+                {categories.map((value, i) =>(
+                    <button 
+                        key={i}
+                        onClick={() => toggleTab(i)} 
+                        className={toggleState === i ? "product-category-tabs-button active" : "product-category-tabs-button"}>{value}
+                    </button>
+                ))}
             </div>
             <div className="product-category-content">
-                <div onClick={() => toggleTab(1)} 
-                     className={toggleState === 1 ? "product-category-tab row active" : "product-category-tab row" }>
+                <div onClick={() => toggleTab(0)} 
+                     className={toggleState === 0 ? "product-category-tab row active" : "product-category-tab row" }>
                             {ItemCategoryFish.map(item => {
                                 return (
                                     <Card
@@ -70,7 +70,7 @@ const ProductCategory = () => {
                             })}
                 </div>
                 <div onClick={() => toggleTab(1)} 
-                     className={toggleState === 2 ? "product-category-tab row active" : "product-category-tab row" }>
+                     className={toggleState === 1 ? "product-category-tab row active" : "product-category-tab row" }>
                             {ItemCategoryCalmar.map(item => {
                                 return (
                                     <Card
@@ -81,8 +81,8 @@ const ProductCategory = () => {
                                 )
                             })}
                 </div>
-                <div onClick={() => toggleTab(1)} 
-                     className={toggleState === 3 ? "product-category-tab row active" : "product-category-tab row" }>
+                <div onClick={() => toggleTab(2)} 
+                     className={toggleState === 2 ? "product-category-tab row active" : "product-category-tab row" }>
                             {ItemCategoryCrab.map(item => {
                                 return (
                                     <Card

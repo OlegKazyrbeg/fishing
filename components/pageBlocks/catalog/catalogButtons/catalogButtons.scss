@@ -1,0 +1,19 @@
+.catalog-buttons{
+    margin-bottom: 65px;
+
+    &-list{
+        justify-content: flex-end;
+        gap: 35px;
+    }
+
+    &-item button{
+        font-size: 24px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: var(--color2);
+
+        &.active{
+            color: var(--color1);
+        }
+    }
+}
