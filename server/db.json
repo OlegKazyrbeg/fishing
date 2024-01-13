@@ -28,28 +28,28 @@
 
     "itemCategory":[
       {
-        "type": "fish",
+        "type": 1,
         "image": "/public/card-image1.webp",
         "name": "Барабуля черноморская",
         "price": "260 руб.",
         "id": 1
       },
       {
-        "type": "fish",
+        "type": 1,
         "image": "/public/card-image1.webp",
         "name": "Барабуля черноморская",
         "price": "260 руб.",
         "id": 2
       },
       {
-        "type": "fish",
+        "type": 1,
         "image": "/public/card-image1.webp",
         "name": "Барабуля черноморская",
         "price": "260 руб.",
         "id": 3
       },
       {
-        "type": "fish",
+        "type": 1,
         "image": "/public/card-image1.webp",
         "name": "Барабуля черноморская",
         "price": "260 руб.",
@@ -59,14 +59,14 @@
 
 
       {
-        "type": "calmar",
+        "type": 3,
         "image": "/public/card-image3.svg",
         "name": "Кальмары",
         "price": "600 руб.",
         "id": 1
       },
       {
-        "type": "calmar",
+        "type": 3,
         "image": "/public/card-image3.svg",
         "name": "Кальмары",
         "price": "600 руб.",
@@ -76,35 +76,35 @@
 
       
       {
-        "type":"crab",
+        "type": 2,
         "image": "/public/card-image2.jpg",
         "name": "Крабы",
         "price": "400 руб.",
         "id": 1
       },
       {
-        "type":"crab",
+        "type": 2,
         "image": "/public/card-image2.jpg",
         "name": "Крабы",
         "price": "400 руб.",
         "id": 2
       },
       {
-        "type":"crab",
+        "type": 2,
         "image": "/public/card-image2.jpg",
         "name": "Крабы",
         "price": "400 руб.",
         "id": 3
       },
       {
-        "type":"crab",
+        "type": 2,
         "image": "/public/card-image2.jpg",
         "name": "Крабы",
         "price": "400 руб.",
         "id": 4
       },
       {
-        "type":"crab",
+        "type": 2,
         "image": "/public/card-image2.jpg",
         "name": "Крабы",
         "price": "400 руб.",

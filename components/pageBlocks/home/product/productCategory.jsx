@@ -18,7 +18,7 @@ const ProductCategory = () => {
     useEffect(() => {
         axios.get('http://localhost:3001/itemCategory', {
             params: {
-                type: 'crab'
+                type: 3
             }
         })
           .then(response => setItemCategoryCrab(response.data))
@@ -28,7 +28,7 @@ const ProductCategory = () => {
       useEffect(() => {
         axios.get('http://localhost:3001/itemCategory', {
             params: {
-                type: 'calmar'
+                type: 2
             }
         })
           .then(response => setItemCategoryCalmar(response.data))
@@ -38,7 +38,7 @@ const ProductCategory = () => {
       useEffect(() => {
         axios.get('http://localhost:3001/itemCategory', {
             params: {
-                type: 'fish'
+                type: 1
             }
         })
           .then(response => setItemCategoryFish(response.data))

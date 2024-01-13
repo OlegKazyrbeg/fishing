@@ -1,4 +1,25 @@
 .catalog-content{
     flex-wrap: wrap;
     gap: 44px;
+
+    & .category-card{
+        width: calc(25% - 33px);
+    }
+}
+
+@media (max-width: 1024px){
+    .catalog-content{
+        justify-content: center;
+        gap: 10px;
+
+        & .category-card{
+            width: 47%;
+        }
+    }
+}
+
+@media (max-width: 576px){
+    .catalog-content .category-card{
+        width: 80%;
+    }
 }

@@ -1,6 +1,6 @@
 .catalog-buttons{
     margin-bottom: 65px;
-
+    
     &-list{
         justify-content: flex-end;
         gap: 35px;
@@ -14,6 +14,19 @@
 
         &.active{
             color: var(--color1);
+        }
+    }
+}
+
+@media (max-width: 576px){
+    .catalog-buttons{
+        &-list{
+            justify-content: center;
+            gap: 15px;
+        }
+
+        &-item button{
+            font-size: 20px;
         }
     }
 }
