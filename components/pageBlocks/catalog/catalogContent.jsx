@@ -20,8 +20,9 @@ const CatalogContent = () => {
             <div className="container">
                 <CatalogButtons value={categoryId} onClickCategory={(i) => setCategoryId(i)}/>
                 <div className="catalog-content row">
-                    {ItemCategory.map(item =>(
+                    {ItemCategory.map((item, i) =>(
                         <Card
+                            key={i}
                             image={item.image}
                             name={item.name}
                             price={item.price}
