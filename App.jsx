@@ -6,9 +6,11 @@ import Footer from "./components/base/footer"
 function App() {
     return(
       <BrowserRouter>
-        <Header/>
-          {router()}
-        <Footer/>
+        <div className="layout row">
+          <Header/>
+            {router()}
+          <Footer/>
+        </div>
       </BrowserRouter>
     )
 }
