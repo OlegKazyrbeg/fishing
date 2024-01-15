@@ -1,0 +1,36 @@
+.basket-card{
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid rgb(228, 228, 228);
+
+    &-description{
+        gap: 15px;
+
+        & img{
+            padding: 10px;
+            background-color: #EEEE;
+        }
+    }
+
+    &-title{
+        font-size: 24px;
+        position: relative;
+        top: 20px;
+    }
+
+    &-count{
+        align-items: center;
+        gap: 20px;
+        font-size: 24px;
+
+        & .card-count{
+            font-weight: 600;
+        }
+    }
+
+    &-price{
+        font-size: 24px;
+        font-weight: 600;
+    }
+}

@@ -19,7 +19,7 @@ const Header = () => {
                         <ul className={`header-nav row ${toggleMenu ? "active" : ''}`}>
                             <Link to={PATHS.ABOUT} className="header-nav-item">Каталог</Link>
                             <Link to={PATHS.CATALOG} className="header-nav-item">О нас</Link>
-                            <Link className="header-nav-item">link</Link>
+                            <Link to={PATHS.BASKET} className="header-nav-item">корзина</Link>
                             <Link className="header-nav-item">link</Link>
                             <button 
                                 onClick={() => setToggleMenu(!toggleMenu)}  
