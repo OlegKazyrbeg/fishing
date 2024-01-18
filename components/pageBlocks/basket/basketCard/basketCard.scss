@@ -7,10 +7,20 @@
     &-right{
         align-items: center;
         gap: 120px;
+
+        @media(max-width: 1024px){
+            gap: 50px
+        }
     }
 
     &-description{
         gap: 15px;
+
+        @media(max-width: 1024px){
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
 
         & img{
             padding: 10px;
@@ -22,6 +32,12 @@
         font-size: 24px;
         position: relative;
         top: 20px;
+        max-width: 180px;
+
+        @media(max-width: 1024px){
+            top: 0;
+            max-width: inherit;
+        }
     }
 
     &-count{
