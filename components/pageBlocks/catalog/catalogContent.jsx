@@ -1,12 +1,19 @@
+import './catalogContent.scss'
+import { setCategoryId } from '../../../redux/slices/filterSlice';
 import CatalogButtons from "./catalogButtons/catalogButtons";
 import Card from '../../base/card';
-import './catalogContent.scss'
 import axios from 'axios';
 import { useState, useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 
 
 const CatalogContent = () => {
-    const [categoryId, setCategoryId] = useState(0)
+    const dispath = useDispatch()
+    const categoryId = useSelector(state => state.filter.categoryId)
+    
+    const onClickCategory = (id) =>{
+        dispath(setCategoryId(id))
+    }
     const [ItemCategory, setItemCategory] = useState([]);
 
     useEffect(() => {
@@ -18,14 +25,10 @@ const CatalogContent = () => {
     return ( 
         <section className="catalog">
             <div className="container">
-                <CatalogButtons value={categoryId} onClickCategory={(i) => setCategoryId(i)}/>
+                <CatalogButtons value={categoryId} onClickCategory={onClickCategory}/>
                 <div className="catalog-content row">
-                    {ItemCategory.map((item, i) =>(
-                        <Card
-                            key={i}
-                            image={item.image}
-                            name={item.name}
-                            price={item.price}
+                    {ItemCategory.map((obj) =>(
+                        <Card key={obj.id} {...obj}
                         />
                     ))}
                 </div>

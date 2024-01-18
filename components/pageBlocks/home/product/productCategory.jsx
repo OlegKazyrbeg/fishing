@@ -1,11 +1,19 @@
 import Card from "../../../base/card";
-import { useState, useEffect } from "react";
 import axios from 'axios'
 import ProductBtn from "./productBtn";
+import { setCategoryId } from "../../../../redux/slices/filterSlice";
+import { useDispatch, useSelector } from 'react-redux';
+import { useState, useEffect } from "react";
 
 const ProductCategory = () => {
+    const dispath = useDispatch() 
+    const categoryId = useSelector(state => state.filter.categoryId)
+
+    const onClickCategory = (id) =>{
+        dispath(setCategoryId(id))
+    }
+
     const [ItemCategory, setItemCategory] = useState([]);
-    const [categoryId, setCategoryId] = useState(0)
 
     useEffect(() => {
         axios.get(`http://localhost:3001/itemCategory?${
@@ -20,7 +28,7 @@ const ProductCategory = () => {
 
     return ( 
         <div className="product-category">
-            <ProductBtn value={categoryId} onClickButtons={(i)=> setCategoryId(i)}/>
+            <ProductBtn value={categoryId} onClickButtons={onClickCategory}/>
             <div className="product-category-content">
                 <div className="product-category-tab row">
                     {ItemCategory.map((item, i) =>(

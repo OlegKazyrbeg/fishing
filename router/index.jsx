@@ -14,8 +14,8 @@ export const PATHS = {
 export const router = () =>(
     <Routes>
         <Route path={ PATHS.MAIN } element={<Home/>}/>
-        <Route path={ PATHS.CATALOG } element={<About/>}/>
-        <Route path={ PATHS.ABOUT } element={<Catalog/>}/>
+        <Route path={ PATHS.CATALOG } element={<Catalog/>}/>
+        <Route path={ PATHS.ABOUT } element={<About/>}/>
         <Route path={ PATHS.BASKET} element={<Basket/>}/>
     </Routes>
 )

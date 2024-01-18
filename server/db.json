@@ -3,25 +3,25 @@
     {
       "image": "/public/card-image1.webp",
       "name": "Барабуля черноморская",
-      "price": "260 руб.",
+      "price": 260,
       "id": 1
     },
     {
       "image": "/public/card-image2.jpg",
       "name": "Крабы",
-      "price": "400 руб.",
+      "price": 400,
       "id": 2
     },
     {
       "image": "/public/card-image3.svg",
       "name": "Кальмары",
-      "price": "600 руб.",
+      "price": 600,
       "id": 3
     },
     {
       "image": "/public/card-image4.svg",
       "name": "Креветки",
-      "price": "300 руб.",
+      "price": 300,
       "id": 4
     }
     ],
@@ -31,29 +31,29 @@
         "type": 1,
         "image": "/public/card-image1.webp",
         "name": "Барабуля черноморская",
-        "price": "260 руб.",
-        "id": 1
+        "price": 260,
+        "id": 5
       },
       {
         "type": 1,
         "image": "/public/card-image1.webp",
         "name": "Барабуля черноморская",
-        "price": "260 руб.",
-        "id": 2
+        "price": 260,
+        "id": 6
       },
       {
         "type": 1,
         "image": "/public/card-image1.webp",
         "name": "Барабуля черноморская",
-        "price": "260 руб.",
-        "id": 3
+        "price": 260,
+        "id": 7
       },
       {
         "type": 1,
         "image": "/public/card-image1.webp",
         "name": "Барабуля черноморская",
-        "price": "260 руб.",
-        "id": 4
+        "price": 260,
+        "id": 8
       },
 
 
@@ -62,15 +62,15 @@
         "type": 3,
         "image": "/public/card-image3.svg",
         "name": "Кальмары",
-        "price": "600 руб.",
-        "id": 1
+        "price": 600,
+        "id": 9
       },
       {
         "type": 3,
         "image": "/public/card-image3.svg",
         "name": "Кальмары",
-        "price": "600 руб.",
-        "id": 2
+        "price": 600,
+        "id": 10
       },
 
 
@@ -79,36 +79,36 @@
         "type": 2,
         "image": "/public/card-image2.jpg",
         "name": "Крабы",
-        "price": "400 руб.",
-        "id": 1
+        "price": 400,
+        "id": 11
       },
       {
         "type": 2,
         "image": "/public/card-image2.jpg",
         "name": "Крабы",
-        "price": "400 руб.",
-        "id": 2
+        "price": 400,
+        "id": 12
       },
       {
         "type": 2,
         "image": "/public/card-image2.jpg",
         "name": "Крабы",
-        "price": "400 руб.",
-        "id": 3
+        "price": 400,
+        "id": 13
       },
       {
         "type": 2,
         "image": "/public/card-image2.jpg",
         "name": "Крабы",
-        "price": "400 руб.",
-        "id": 4
+        "price": 400,
+        "id": 14
       },
       {
         "type": 2,
         "image": "/public/card-image2.jpg",
         "name": "Крабы",
-        "price": "400 руб.",
-        "id": 5
+        "price": 400,
+        "id": 15
       }
     ]
 }   

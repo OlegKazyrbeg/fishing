@@ -17,15 +17,24 @@
 @media (max-width: 1024px){
     .catalog-content{
         justify-content: center;
-        gap: 10px;
+        gap: 30px;
 
         & .category-card{
-            width: 47%;
+            width: 28%;
         }
     }
 }
 
-@media (max-width: 576px){
+@media (max-width: 780px){
+    .catalog-content{
+        gap: 15px;
+        & .category-card{
+            width: 40%;
+        }
+    }
+}
+
+@media (max-width: 540px){
     .catalog-content .category-card{
         width: 80%;
     }

@@ -11,7 +11,7 @@ const Product = () => {
                     <img src="public/newback1.svg" alt="" />
                     <div className="product-top-description">
                         <h3 className="product-top-title title">РАЗЛИЧНЫЕ ВИДЫ КАЛЬМАРОВ</h3>
-                        <PrimaryButton/>
+                        <PrimaryButton>Подробнее</PrimaryButton>
                     </div>
                 </div>
                 <ProductCategory/>
@@ -22,7 +22,7 @@ const Product = () => {
                             <h3 className="product-bottom-title">КРЕВЕТКИ</h3>
                             <p className="product-bottom-price">ОТ 500 РУБ.</p>
                             <div className="product-bottom-button">
-                                <PrimaryButton/>
+                                <PrimaryButton>Подробнее</PrimaryButton>
                             </div>
                         </div>
                     </div>
@@ -32,7 +32,7 @@ const Product = () => {
                             <h3 className="product-bottom-title">КРАБЫ</h3>
                             <p className="product-bottom-price">ОТ 350 РУБ.</p>
                             <div className="product-bottom-button">
-                                <PrimaryButton/>
+                                <PrimaryButton>Подробнее</PrimaryButton>
                             </div>
                         </div>
                     </div>

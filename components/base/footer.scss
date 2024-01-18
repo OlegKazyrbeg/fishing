@@ -1,6 +1,4 @@
 .footer{
-    position: relative;
-    top: 150px;
     background: var(--color1);
 
     &-content{
@@ -31,7 +29,6 @@
 
 @media (max-width: 789px){
     .footer{
-        top: 65px;
 
         &-text{
             font-size: 12px;

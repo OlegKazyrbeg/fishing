@@ -1,0 +1,10 @@
+.home ~ .footer{
+    position: relative;
+    top: 150px;
+
+    @media (max-width: 789px){
+        &{
+            top: 65px;
+        }
+    }
+}

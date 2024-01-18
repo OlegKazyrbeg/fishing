@@ -1,0 +1,16 @@
+.basket-empty{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    min-height: 35vh;
+
+    &-title{
+        font-size: 64px;
+        font-weight: 600;
+        margin-bottom: 35px;
+    }
+
+    &-button .primary-button{
+        background-color: var(--color1);
+    }
+}
