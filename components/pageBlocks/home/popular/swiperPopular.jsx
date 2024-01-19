@@ -28,16 +28,10 @@ const SwiperPopular = () => {
               },
         }}
       >
-        {SliderItem.map(item => {
-            return (
-                <SwiperSlide key={item.id}>
-                    <Card
-                        image={item.image}
-                        name={item.name}
-                        price={item.price}/>
-                </SwiperSlide>
-            )
-        })}
+        {SliderItem.map(item => 
+            <SwiperSlide>
+                <Card key={item.id} {...item}/>
+            </SwiperSlide>)}
     </Swiper>
      );
 }

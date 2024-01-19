@@ -31,14 +31,7 @@ const ProductCategory = () => {
             <ProductBtn value={categoryId} onClickButtons={onClickCategory}/>
             <div className="product-category-content">
                 <div className="product-category-tab row">
-                    {ItemCategory.map((item, i) =>(
-                        <Card
-                            key={i}
-                            image={item.image}
-                            name={item.name}
-                            price={item.price}
-                        />
-                        ))}
+                    {ItemCategory.map(item => <Card key={item.id} {...item} />)}
                 </div>
             </div>
         </div>
