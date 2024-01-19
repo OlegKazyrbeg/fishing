@@ -29,7 +29,7 @@ const SwiperPopular = () => {
         }}
       >
         {SliderItem.map(item => 
-            <SwiperSlide>
+            <SwiperSlide key={item.id}>
                 <Card key={item.id} {...item}/>
             </SwiperSlide>)}
     </Swiper>
