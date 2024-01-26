@@ -3,7 +3,7 @@
     {
       "image": "/public/card-image1.webp",
       "name": "Барабуля черноморская",
-      "price": 260,
+      "price": 890,
       "id": 1
     },
     {
@@ -31,28 +31,28 @@
         "type": 1,
         "image": "/public/card-image1.webp",
         "name": "Барабуля черноморская",
-        "price": 260,
+        "price": 890,
         "id": 5
       },
       {
         "type": 1,
-        "image": "/public/card-image1.webp",
-        "name": "Барабуля черноморская",
-        "price": 260,
+        "image": "/public/card-image12.svg",
+        "name": "Сибас",
+        "price": 1015,
         "id": 6
       },
       {
         "type": 1,
-        "image": "/public/card-image1.webp",
-        "name": "Барабуля черноморская",
-        "price": 260,
+        "image": "/public/card-image13.svg",
+        "name": "Тунец",
+        "price": 2420,
         "id": 7
       },
       {
         "type": 1,
-        "image": "/public/card-image1.webp",
-        "name": "Барабуля черноморская",
-        "price": 260,
+        "image": "/public/card-image14.svg",
+        "name": "Форель",
+        "price": 750,
         "id": 8
       },
 
@@ -61,15 +61,15 @@
       {
         "type": 3,
         "image": "/public/card-image3.svg",
-        "name": "Кальмары",
-        "price": 600,
+        "name": "Кальмар свежий",
+        "price": 340,
         "id": 9
       },
       {
         "type": 3,
-        "image": "/public/card-image3.svg",
-        "name": "Кальмары",
-        "price": 600,
+        "image": "/public/card-image32.svg",
+        "name": "Кальмар командорский / филе",
+        "price": 1050,
         "id": 10
       },
 
@@ -78,37 +78,23 @@
       {
         "type": 2,
         "image": "/public/card-image2.jpg",
-        "name": "Крабы",
-        "price": 400,
+        "name": "Краб королевский / целый",
+        "price": 3200,
         "id": 11
       },
       {
         "type": 2,
-        "image": "/public/card-image2.jpg",
-        "name": "Крабы",
-        "price": 400,
+        "image": "/public/card-image22.svg",
+        "name": "Краб стригун / конечности",
+        "price": 1300,
         "id": 12
       },
       {
         "type": 2,
-        "image": "/public/card-image2.jpg",
-        "name": "Крабы",
-        "price": 400,
+        "image": "/public/card-image23.svg",
+        "name": "Краб египетский / синий",
+        "price": 2150,
         "id": 13
-      },
-      {
-        "type": 2,
-        "image": "/public/card-image2.jpg",
-        "name": "Крабы",
-        "price": 400,
-        "id": 14
-      },
-      {
-        "type": 2,
-        "image": "/public/card-image2.jpg",
-        "name": "Крабы",
-        "price": 400,
-        "id": 15
       }
     ]
 }   

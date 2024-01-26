@@ -24,7 +24,7 @@ const Card = ({ image, name, price, id }) => {
             <div className="category-card-description">
                 <div className="category-card-name">{name}</div>
                 <div className="category-card-bottom row">
-                    <div className="category-card-price">{price} руб.</div>
+                    <div className="category-card-price">{price} руб. <span>1 кг</span></div>
                     <button onClick={onClickAdd} className="category-card-button">ДОБАВИТЬ</button>
                 </div>
             </div>

@@ -5,6 +5,7 @@ import deleteIcon from '/public/trash-icon.png'
 import { useSelector, useDispatch } from 'react-redux';
 import { clearItem } from '../../../redux/slices/cardSlice';
 import BasketEmpty from './basketEmpty/basketEmpty';
+import PrimaryButton from '../../ui/buttons/primaryButton';
 
 const Basket = () => {
     const { totalPrice, items } = useSelector(state => state.card)
@@ -37,6 +38,9 @@ const Basket = () => {
                         <div className="basket-content-count">Всего: {totalCount} шт.</div>
                         <div className="basket-content-price">Всего: {totalPrice} руб.</div>
                     </div>
+                </div>
+                <div className="basket-button">
+                    <PrimaryButton>Oформить</PrimaryButton>
                 </div>
             </div>
         </section>
