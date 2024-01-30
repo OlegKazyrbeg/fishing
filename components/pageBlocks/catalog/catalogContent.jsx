@@ -27,6 +27,7 @@ const CatalogContent = () => {
             <div className="container">
                 <CatalogButtons value={categoryId} onClickCategory={onClickCategory}/>
                 <div className="catalog-content row">
+                    2
                     {ItemCategory.map((obj) =>(
                         <Card key={obj.id} {...obj}
                         />
