@@ -8,22 +8,19 @@ import { useState, useEffect } from "react";
 const ProductCategory = () => {
     const dispath = useDispatch() 
     const categoryId = useSelector(state => state.filter.categoryId)
+    const [ItemCategory, setItemCategory] = useState([]);
 
     const onClickCategory = (id) =>{
         dispath(setCategoryId(id))
     }
 
-    const [ItemCategory, setItemCategory] = useState([]);
-
     useEffect(() => {
-        axios.get(`http://localhost:3001/itemCategory?${
-            categoryId == 0 ? `type=1` :
-            categoryId == 1 ? `type=3` :
-            `type=2`
-        }`,{
-        })
-          .then(response => setItemCategory(response.data))
-          .catch(error => console.log(error));
+        const category = categoryId == 0 ? `type=1` : categoryId == 1 ? `type=3` : `type=2`
+
+        axios.get(`http://localhost:3001/itemCategory?${category}`)
+          .then(res => {
+            setItemCategory(res.data)
+          })
       }, [categoryId]);
 
     return ( 
