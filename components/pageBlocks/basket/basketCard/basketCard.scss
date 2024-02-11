@@ -16,6 +16,10 @@
             gap: 40px;
         }
 
+        @media(max-width: 640px){
+            gap: 20px;
+        }
+
         @media(max-width: 515px){
             flex-direction: column;
             align-items: center;
@@ -80,6 +84,25 @@
 
         & .card-count{
             font-weight: 600;
+
+            &-button{
+                width: 25px;
+                height: 25px;
+                border-radius: 100%;
+                background-color: var(--color4);
+                align-items: center;
+                justify-content: center;
+                transition: 0.5s ease;
+
+                &:hover{
+                    background-color: var(--color1);
+                }
+
+                & img{
+                    width: 10px;
+
+                }
+            }
         }
     }
 
@@ -87,5 +110,16 @@
         font-size: 24px;
         font-weight: 600;
         gap: 50px;
+    }
+
+    &-delete{
+        background-color: var(--color4);
+        color: var(--color5);
+        padding: 10px;
+        transition: 0.5s ease;
+
+        &:hover{
+            background-color: var(--color1);
+        }
     }
 }
