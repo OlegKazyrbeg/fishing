@@ -27,11 +27,13 @@ const BasketCard = ({ image, name, price, count, id }) => {
             </div>
             <div className="basket-card-right row">
                 <div className="basket-card-count row">
-                    <button onClick={onCliclMinus} className="card-count-button count-delete">убавить</button>
-                    <div className="card-count">{count}</div>
-                    <button onClick={onCliclPlus} className="card-count-button count-add">добавить</button>
+                    <div className="basket-card-count-top row">
+                        <button onClick={onCliclMinus} className="card-count-button count-delete">убавить</button>
+                        <div className="card-count">{count}</div>
+                        <button onClick={onCliclPlus} className="card-count-button count-add">добавить</button>
+                    </div>
+                    <div className="basket-card-price row">{price} руб.</div>
                 </div>
-                <div className="basket-card-price">{price} руб.</div>
                 <button onClick={onClickRemove} className="basket-card-delete">delete</button>
             </div>
         </article>

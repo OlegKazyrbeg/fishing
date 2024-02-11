@@ -21,6 +21,12 @@
             font-size: 18px;
             color: var(--color4);
 
+            & span{
+                @media(max-width:440px){
+                    display: none;
+                }
+            }
+
             &:hover{
                 color: var(--color1);
             }
@@ -31,6 +37,11 @@
         font-size: 36px;
         color: var(--color1);
         font-weight: 600;
+
+        @media(max-width: 576px){
+            position: relative;
+            top: 4px;
+        }
     }
 
     &-content{

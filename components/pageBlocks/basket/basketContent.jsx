@@ -34,7 +34,7 @@ const Basket = () => {
                         <img src={basketIcon} alt="basket-icon" width={33} />
                         <h2 className="basket-title title">КОРЗИНА</h2>
                     </div>
-                    <button onClick={onClickClear} className="basket-top-button row"><img src={deleteIcon} alt="basket-delete" width={30} />Очистить корзину</button>
+                    <button onClick={onClickClear} className="basket-top-button row"><img src={deleteIcon} alt="basket-delete" width={30} /><span>Очистить корзину</span></button>
                 </div>
                 <div className="basket-content row">
                     {cards.map(item => <BasketCard key={item.id} {...item}/>)}
