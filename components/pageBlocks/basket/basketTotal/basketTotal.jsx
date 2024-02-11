@@ -13,12 +13,14 @@ const BasketTotal = ({setFormContent}) => {
                 <form action="">
                     <label> Введите почту для отправки <br />
                         <input type="email" placeholder="mail@mail.ru" />
-                        <button onClick={() => setFormContent(0)} type='button' className='basket-total-btn'>
+                        <button onClick={() => setFormContent(0)} type='button' className='basket-total-btn close'>
                             <span></span>
                             <span></span>
                         </button>
                     </label>
-                    <PrimaryButton>Отправить</PrimaryButton>
+                    <div className="basket-total-btn">
+                        <PrimaryButton>Отправить</PrimaryButton>
+                    </div>
                 </form>
             </div>
         </div>
