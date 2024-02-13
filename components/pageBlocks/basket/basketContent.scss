@@ -53,6 +53,11 @@
             font-size: 24px;
             margin-top: 65px;
             justify-content: flex-end;
+
+            @media(max-width:576px){
+                gap: 40px;
+                font-size: 20px;
+            }
         }
     }
 
