@@ -1,7 +1,10 @@
+import classes from './about.module.scss'
+
 const About = () => {
     return ( 
-        <div>
-            <p>about</p>
+        <div className={classes.about}>
+            <p>О нас</p>
+            <p>Мы крутые!!</p>
         </div>
      );
 }

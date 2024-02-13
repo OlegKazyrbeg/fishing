@@ -3,6 +3,7 @@ import './header.scss'
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
+import { motion } from "framer-motion"
 
 const Header = () => {
     const { items } = useSelector(state => state.card)
@@ -11,14 +12,18 @@ const Header = () => {
     const [toggleMenu, setToggleMenu] = useState(false)
 
     return ( 
-        <header className="header">
+        <motion.header className="header"
+            initial={{ y: -80 }}
+            animate={{ y: 0 }}
+            transition={{ duration: 1, delay: 0.5 }}        
+        >
             <div className="container">
                 <div className="header-content row">
                     <Link to={PATHS.MAIN} className="logo">
                         <img src="/logo.png" alt="logo" width={50}/>
                         Аппетитная <br /> щучка
                     </Link>
-                    <nav>
+                    <nav >
                         <ul className={`header-nav row ${toggleMenu ? "active" : ''}`}>
                             <Link to={PATHS.CATALOG} className="header-nav-item">Каталог</Link>
                             <Link to={PATHS.ABOUT} className="header-nav-item">О нас</Link>
@@ -39,7 +44,7 @@ const Header = () => {
                     </button>
                 </div>
             </div>
-        </header>
+        </motion.header>
      );
 }
  

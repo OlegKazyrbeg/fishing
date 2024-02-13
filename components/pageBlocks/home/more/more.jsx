@@ -1,9 +1,10 @@
 import './more.scss'
+import { motion } from "framer-motion"
 
 const More = () => {
     return ( 
         <section className="more">
-            <div className="container">
+            <motion.div className="container"  initial={{ y: 45, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true }} transition={{ duration: 1, delay: 1.1 }}>
                 <h2 className="more-title title">ПОЛЕЗНОЕ ДЛЯ ВАС</h2>
                 <div className="more-content row">
                     <article className="more-item">
@@ -25,7 +26,7 @@ const More = () => {
                         </div>
                     </article>
                 </div>
-            </div>
+            </motion.div>
         </section>
      );
 }
