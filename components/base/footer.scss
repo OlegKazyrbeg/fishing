@@ -3,13 +3,17 @@
 
     &-content{
         color: var(--color5);
-
+        
         & .footer-nav{
             gap: 60px;
             font-size: 16px;
             justify-content: center;
             padding: 20px 0;
             border-top: 2px solid var(--color2);
+
+            &-item{
+                color: var(--color5);
+            }
         }
 
         &-top{

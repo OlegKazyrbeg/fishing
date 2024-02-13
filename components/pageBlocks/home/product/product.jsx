@@ -1,6 +1,16 @@
+import { PATHS } from "../../../../router";
 import PrimaryButton from "../../../ui/buttons/primaryButton";
 import './product.scss'
 import ProductCategory from "./productCategory";
+import { Link } from 'react-router-dom';
+
+const LinkMore = () =>{
+    return(
+        <Link to={PATHS.CATALOG}>
+            <PrimaryButton>Подробнее</PrimaryButton>
+        </Link>
+    )
+}
 
 const Product = () => {
     return ( 
@@ -11,7 +21,7 @@ const Product = () => {
                     <img src="public/newback1.svg" alt="" />
                     <div className="product-top-description">
                         <h3 className="product-top-title title">РАЗЛИЧНЫЕ ВИДЫ КАЛЬМАРОВ</h3>
-                        <PrimaryButton>Подробнее</PrimaryButton>
+                        <LinkMore/>
                     </div>
                 </div>
                 <ProductCategory/>
@@ -22,7 +32,7 @@ const Product = () => {
                             <h3 className="product-bottom-title">КРЕВЕТКИ</h3>
                             <p className="product-bottom-price">ОТ 500 РУБ.</p>
                             <div className="product-bottom-button">
-                                <PrimaryButton>Подробнее</PrimaryButton>
+                                <LinkMore/>
                             </div>
                         </div>
                     </div>
@@ -32,7 +42,7 @@ const Product = () => {
                             <h3 className="product-bottom-title">КРАБЫ</h3>
                             <p className="product-bottom-price">ОТ 350 РУБ.</p>
                             <div className="product-bottom-button">
-                                <PrimaryButton>Подробнее</PrimaryButton>
+                                <LinkMore/>
                             </div>
                         </div>
                     </div>

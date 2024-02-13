@@ -25,7 +25,6 @@ const Header = () => {
                             <Link to={PATHS.BASKET} className="header-nav-item">корзина
                                 { totalCount > 0 && <div className="card-count row">{totalCount}</div>}
                             </Link>
-                            <Link className="header-nav-item">link</Link>
                             <button 
                                 onClick={() => setToggleMenu(!toggleMenu)}  
                                 className='close-menu'>

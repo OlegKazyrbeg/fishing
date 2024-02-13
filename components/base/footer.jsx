@@ -1,5 +1,6 @@
-import PrimaryButton from '../ui/buttons/primaryButton';
+import { PATHS } from '../../router';
 import './footer.scss'
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return ( 
@@ -14,10 +15,9 @@ const Footer = () => {
                     </div>
                     <nav>
                         <ul className="footer-nav row">
-                            <li className="footer-nav-item">LINK</li>
-                            <li className="footer-nav-item">LINK</li>
-                            <li className="footer-nav-item">LINK</li>
-                            <li className="footer-nav-item">LINK</li>
+                            <Link to={PATHS.CATALOG}><li className="footer-nav-item">КАТАЛОГ</li></Link>
+                            <Link to={PATHS.ABOUT}><li className="footer-nav-item">О НАС</li></Link>
+                            <Link to={PATHS.BASKET}><li className="footer-nav-item">КОРЗИНА</li></Link>
                         </ul>
                     </nav>
                 </div>
