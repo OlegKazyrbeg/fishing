@@ -1,6 +1,7 @@
 import './card.scss'
 import { useDispatch, useSelector } from 'react-redux';
 import { addItem } from '../../redux/slices/cardSlice';
+import { motion } from 'framer-motion';
 
 const Card = ({ image, name, price, id }) => {
     const dispath = useDispatch()
@@ -18,6 +19,13 @@ const Card = ({ image, name, price, id }) => {
         dispath(addItem(item))
     }
 
+    
+    const animate = {
+        initial: { y: -20, opacity: 0 },
+        animate: { y: 0, opacity: 1 },
+    };
+    
+
     return ( 
         <article className="category-card">
             <img src={image} alt="card" />
@@ -28,7 +36,11 @@ const Card = ({ image, name, price, id }) => {
                     <button onClick={onClickAdd} className="category-card-button">ДОБАВИТЬ</button>
                 </div>
             </div>
-            { addedCount > 0 && <div className="category-card-count row">{addedCount}</div>}
+            { addedCount > 0 && <motion.div className="category-card-count row"
+                variants={animate}
+                initial="initial"
+                animate="animate" >
+                {addedCount}</motion.div> }
         </article>
      );
 }

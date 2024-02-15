@@ -10,13 +10,16 @@ const Header = () => {
     const totalCount = items.reduce((sum, obj) => sum +obj.count, 0)
 
     const [toggleMenu, setToggleMenu] = useState(false)
+    const [activeNav, setActiveNav] = useState(false)
+
+    const navList = ['Каталог', 'О нас', 'Корзина']
 
     return ( 
         <motion.header className="header"
             initial={{ y: -80 }}
             animate={{ y: 0 }}
-            transition={{ duration: 1, delay: 0.5 }}        
-        >
+            transition={{ duration: 1, delay: 0.5 }}>
+
             <div className="container">
                 <div className="header-content row">
                     <Link to={PATHS.MAIN} className="logo">
@@ -28,7 +31,12 @@ const Header = () => {
                             <Link to={PATHS.CATALOG} className="header-nav-item">Каталог</Link>
                             <Link to={PATHS.ABOUT} className="header-nav-item">О нас</Link>
                             <Link to={PATHS.BASKET} className="header-nav-item">корзина
-                                { totalCount > 0 && <div className="card-count row">{totalCount}</div>}
+                                { totalCount > 0 && <motion.div className="card-count row" 
+                                initial={{ opacity: 0 }} 
+                                animate={{ opacity: 1 }} 
+                                transition={{ duration: 0.4 }}>
+                                    
+                                {totalCount}</motion.div>}
                             </Link>
                             <button 
                                 onClick={() => setToggleMenu(!toggleMenu)}  
