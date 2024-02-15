@@ -2,6 +2,10 @@ import { PATHS } from '../../router';
 import './footer.scss'
 import { Link } from 'react-router-dom';
 
+const handleClickTop = () => {
+    window.scrollTo(0, 0)
+}
+
 const Footer = () => {
     return ( 
         <footer className="footer">
@@ -15,9 +19,9 @@ const Footer = () => {
                     </div>
                     <nav>
                         <ul className="footer-nav row">
-                            <Link to={PATHS.CATALOG}><li className="footer-nav-item">КАТАЛОГ</li></Link>
-                            <Link to={PATHS.ABOUT}><li className="footer-nav-item">О НАС</li></Link>
-                            <Link to={PATHS.BASKET}><li className="footer-nav-item">КОРЗИНА</li></Link>
+                            <Link onClick={handleClickTop} to={PATHS.CATALOG}><li className="footer-nav-item">КАТАЛОГ</li></Link>
+                            <Link onClick={handleClickTop} to={PATHS.ABOUT}><li className="footer-nav-item">О НАС</li></Link>
+                            <Link onClick={handleClickTop} to={PATHS.BASKET}><li className="footer-nav-item">КОРЗИНА</li></Link>
                         </ul>
                     </nav>
                 </div>
