@@ -14,23 +14,28 @@ const About = () => {
                     variants={animation}
                     initial='initial'
                     animate='animate'
-                    transition={{ duration: 0.8 }}>
+                    viewport={{ once: true }} 
+                    transition={{ duration: 0.8 , delay: 0.5 }}>
                 О НАС</motion.h2>
                     
-                <div className="about-content row">
+                <div className="about-content">
                     <motion.p className="about-content-text"
                         variants={animation}
                         initial='initial'
                         animate='animate'
-                        transition={{ duration: 0.8, delay: 0.1 }}>
+                        viewport={{ once: true }} 
+                        transition={{ duration: 0.8 , delay: 0.65 }}>
                     Мы стремимся к тому, чтобы каждый клиент нашего магазина мог насладиться изысканными вкусами и питательными свойствами морепродуктов, предлагаемых нами.</motion.p>
-                    <motion.div className="about-we"
+                    <motion.div className="about-we row"
                         variants={animation}
                         initial='initial'
                         animate='animate'
-                        transition={{ duration: 0.8 }}>
-                        <p className="about-we-text"><span>Наше видение</span> - продвигать здоровый образ жизни и кулинарные возможности, которые предлагают нам океаны.</p>
-                        <img src="./public/about.jpg" alt="" />
+                        viewport={{ once: true }} 
+                        transition={{ duration: 0.8 , delay: 0.75 }}>
+                        <div className="about-we-description">
+                            <p className="about-we-text"><span>Наше видение</span> - продвигать здоровый образ жизни и кулинарные возможности, которые предлагают нам океаны.</p>
+                            <img src="./public/about.jpg" alt="aboutTopImg" />
+                        </div>
                     </motion.div>
                 </div>
             </div>

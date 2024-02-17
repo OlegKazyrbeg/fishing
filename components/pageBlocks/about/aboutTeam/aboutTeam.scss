@@ -1,0 +1,16 @@
+.about-team{
+    margin: 100px 0;
+
+    &-title{
+        font-size: 34px;
+        font-weight: 600;
+        margin-bottom: 65px;
+    }
+
+    &-content{
+        gap: 35px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
