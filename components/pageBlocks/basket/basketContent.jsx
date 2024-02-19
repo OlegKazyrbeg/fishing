@@ -10,9 +10,9 @@ import BasketTotal from './basketTotal/basketTotal';
 import { useState } from 'react';
 
 const Basket = () => {
-    const { totalPrice, items } = useSelector(state => state.card)
-    const cards = useSelector((state) => state.card.items)
+    const { totalPrice, items } = useSelector(state => state.card)   
     const totalCount = items.reduce((sum, obj) => sum + obj.count, 0)
+    const cards = useSelector((state) => state.card.items)
 
     const [formContent, setFormContent] = useState()
 
