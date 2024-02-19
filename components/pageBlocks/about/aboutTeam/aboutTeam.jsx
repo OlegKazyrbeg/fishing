@@ -4,21 +4,25 @@ import { motion } from 'framer-motion';
 
 const teamCards = [
     {
+        id: 1,
         name: 'Ирина',
         secondName: 'Петрова',
         specialization: 'Oснователь и руководитель проекта',
     },
     {
+        id: 2,
         name: 'Алексей',
         secondName: 'Иванов',
         specialization: 'Шеф-повар с многолетним опытом работы',
     },
     {
+        id: 3,
         name: 'Мария',
         secondName: 'Сидорова',
         specialization: 'Специалист по закупкам и качеству продукции',
     },
     {
+        id: 4,
         name: 'Дмитрий',
         secondName: 'Николаев',
         specialization: 'Менеджер по работе с клиентами',

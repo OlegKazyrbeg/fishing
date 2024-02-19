@@ -35,10 +35,7 @@ const CatalogContent = () => {
             <div className="container">
                 <CatalogButtons value={categoryId} onClickCategory={onClickCategory}/>
                 <div className="catalog-content row">
-                    {items.map((obj) =>(
-                        <Card key={obj.id} {...obj}
-                        />
-                    ))}
+                    {items.map((obj) =>(<Card key={obj.id} {...obj}/>))}
                 </div>
             </div>
         </section>

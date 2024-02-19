@@ -9,7 +9,7 @@
     {
       "image": "/public/card-image2.jpg",
       "name": "Крабы",
-      "price": 400,
+      "price": 1300,
       "id": 2
     },
     {
@@ -21,7 +21,7 @@
     {
       "image": "/public/card-image4.svg",
       "name": "Креветки",
-      "price": 300,
+      "price": 340,
       "id": 4
     }
     ],

@@ -1,7 +1,7 @@
 import './catalogButtons.scss'
 
 const CatalogButtons = ({value, onClickCategory}) => {
-    const categories = ['все', 'рыбка', 'крабики', 'трусики чембера']
+    const categories = ['все', 'рыбка', 'крабики', 'кальмары']
 
     return ( 
         <div className="catalog-buttons">
