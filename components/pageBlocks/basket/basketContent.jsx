@@ -48,7 +48,12 @@ const Basket = () => {
                 </div>
             </div>
             <div className={formContent ? 'total-wrap active' : 'total-wrap'}>
-                <BasketTotal setFormContent={setFormContent} />
+                <BasketTotal 
+                    setFormContent={setFormContent} 
+                    totalPrice={totalPrice}
+                    totalCount={totalCount}
+                    cards={cards}
+                />
             </div>
         </section>
     );
