@@ -1,4 +1,6 @@
+import { FALSE } from 'sass';
 import PrimaryButton from '../../../ui/buttons/primaryButton';
+import BasketLoading from '../basketLoading/basketLoading';
 import './basketTotal.scss'
 import emailjs from '@emailjs/browser';
 import { useState } from 'react';
