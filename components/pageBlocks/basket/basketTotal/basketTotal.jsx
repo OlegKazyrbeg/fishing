@@ -1,24 +1,21 @@
-import { FALSE } from 'sass';
-import PrimaryButton from '../../../ui/buttons/primaryButton';
-import BasketLoading from '../basketLoading/basketLoading';
 import './basketTotal.scss'
 import emailjs from '@emailjs/browser';
-import { useState } from 'react';
+import { useForm } from "react-hook-form"
 
 const BasketTotal = ({ setFormContent, cards, totalCount, totalPrice }) => {
 
     const getCartTemplate = (cards, totalCount, totalPrice) => (
         `<table style="width:100%; border-collapse: collapse;">
             <tr style="background:black; color:white; font-size: 18px;">
-                <td style="padding: 20px; text-align: center; border: 2px solid black">Наименование</td>
-                <td style="padding: 20px; text-align: center; border: 2px solid black">Количество</td>
-                <td style="padding: 20px; text-align: center; border: 2px solid black">Сумма</td>
+                <td style="padding: 10px; text-align: center; border: 1px solid black">Наименование</td>
+                <td style="padding: 10px; text-align: center; border: 1px solid black">Количество</td>
+                <td style="padding: 10px; text-align: center; border: 1px solid black">Сумма</td>
             </tr style="">
             ${cards.map((item) => {
             return `<tr style="">
-                        <td style="padding: 10px; border: 2px solid grey">${item.name}</td>
-                        <td style="padding: 10px; border: 2px solid grey">${item.count}</td>
-                        <td style="padding: 10px; border: 2px solid grey">${item.price} руб.</td>
+                        <td style="padding: 10px; border: 1px solid grey">${item.name}</td>
+                        <td style="padding: 10px; border: 1px solid grey">${item.count}</td>
+                        <td style="padding: 10px; border: 1px solid grey">${item.price} руб.</td>
                     </tr>`
             })}
         </table>
@@ -29,25 +26,31 @@ const BasketTotal = ({ setFormContent, cards, totalCount, totalPrice }) => {
         `   
     )
 
-    const [recipientEmail, setRecipientEmail] = useState('');
+    const {register, handleSubmit, reset, watch, formState: { errors } } = useForm({
+        mode: 'onChange'
+    })
+
+    const valid = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i
+    const emailValue = watch("email")
 
     const handleSendEmail = async () => {
         const templateId = 'template_5vbxbcc'; // Замените на ваш идентификатор шаблона
         const serviceId = 'service_cyc0tjd'; // Замените на ваш идентификатор сервиса
 
         const templateParams = {
-            to_email: recipientEmail,
+            to_email: emailValue,
             my_html: getCartTemplate(cards, totalCount, totalPrice)
         };
 
         await emailjs.send(serviceId, templateId, templateParams, '46P-uyZXOGwPLne__') // Замените на ваш идентификатор пользователя
-            .then(() => {
-                alert('Готово!')
-                setFormContent(0)
-            })
-            .catch(() => {
-                alert('Ошибка:(')
-            });
+        .then(() => {
+            alert('Готово!')
+            setFormContent(0)
+            reset()
+        })
+        .catch(() => {
+            alert('Ошибка:(')
+        });
     };
 
     return (
@@ -56,22 +59,29 @@ const BasketTotal = ({ setFormContent, cards, totalCount, totalPrice }) => {
                 <div className="basket-total-image">
                     <img src="./public/total.svg" alt="total-image" />
                 </div>
-                <form>
+                <form onSubmit={handleSubmit(handleSendEmail)} >
                     <label> Введите почту для отправки <br />
                         <input
-                            type="email"
-                            placeholder="mail@mail.ru"
+                            placeholder='mail@mail.ru'
                             name='to_email'
-                            value={recipientEmail}
-                            onChange={(e) => setRecipientEmail(e.target.value)}
+                            {...register("email", {
+                                required: 'Обязательное поле для заполнения',
+                                pattern: {
+                                    value: valid,
+                                    message: 'Укажите корректную почту'
+                                }
+                            })}
                         />
+                            {errors.email && (
+                                <div className='message-error empty'>{errors.email.message}</div>
+                            )}
                         <button onClick={() => setFormContent(0)} type='button' className='basket-total-btn close'>
                             <span></span>
                             <span></span>
                         </button>
                     </label>
-                    <div onClick={handleSendEmail} className="basket-total-btn">
-                        <PrimaryButton>Отправить</PrimaryButton>
+                    <div className="basket-total-btn">
+                        <input type='submit'/>
                     </div>
                 </form>
             </div>

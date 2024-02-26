@@ -41,9 +41,14 @@
                 width: 270px
             }
 
-            & .primary-button{
+            & .basket-total-btn input{
                 background-color: var(--color1);
                 margin-top: 20px;
+                color: var(--color5);
+                padding: 18px 35px;
+                border: none;
+                font-size: 16px;
+                cursor: pointer;
             }
 
             & label{
@@ -57,6 +62,14 @@
                     border-bottom: 1px solid var(--color2);
                     outline: none;
                     font-size: 18px;
+                }
+
+                & .message-error.empty{
+                    color: red;
+                    font-size: 12px;
+                    margin-top: 5px;
+                    position: absolute;
+                    right: 0;
                 }
             }
 

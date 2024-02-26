@@ -39,8 +39,8 @@ const Basket = () => {
                 <div className="basket-content row">
                     {cards.map(item => <BasketCard key={item.id} {...item} />)}
                     <div className="basket-content-bottom row">
-                        <div className="basket-content-count">Всего: {totalCount} шт.</div>
-                        <div className="basket-content-price">Всего: {totalPrice} руб.</div>
+                        <div className="basket-content-count">Всего кол-во: {totalCount} шт.</div>
+                        <div className="basket-content-price">Всего сумма: {totalPrice} руб.</div>
                     </div>
                 </div>
                 <div className='basket-button' onClick={() => setFormContent(1)}>
