@@ -68,7 +68,7 @@ const BasketTotal = ({ setFormContent, cards, totalCount, totalPrice }) => {
                                 required: 'Обязательное поле для заполнения',
                                 pattern: {
                                     value: valid,
-                                    message: 'Укажите корректную почту'
+                                    message: 'Укажите корректный адрес почты'
                                 }
                             })}
                         />
