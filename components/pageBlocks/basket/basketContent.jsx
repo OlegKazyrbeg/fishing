@@ -9,12 +9,21 @@ import PrimaryButton from '../../ui/buttons/primaryButton';
 import BasketTotal from './basketTotal/basketTotal';
 import { useState } from 'react';
 
+const Sucsessfull = () => (
+    <div>
+        <div className="sucsess-content">
+            <p>Ваша заявка отправлена!</p>
+        </div>
+    </div>
+)
+
 const Basket = () => {
     const { totalPrice, items } = useSelector(state => state.card)   
     const totalCount = items.reduce((sum, obj) => sum + obj.count, 0)
     const cards = useSelector((state) => state.card.items)
 
     const [formContent, setFormContent] = useState()
+    const [sucsess, setSucsess] = useState()
 
     const dispath = useDispatch()
 
@@ -53,7 +62,11 @@ const Basket = () => {
                     totalPrice={totalPrice}
                     totalCount={totalCount}
                     cards={cards}
+                    setSucsess={setSucsess}
                 />
+            </div>
+            <div className={sucsess ? 'sucsess-wrapper active' : 'sucsess-wrapper'}>
+                <Sucsessfull/>
             </div>
         </section>
     );

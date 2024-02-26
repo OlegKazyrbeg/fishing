@@ -89,3 +89,24 @@
         display: block;
     }
 }
+
+.sucsess-wrapper{
+    position: fixed;
+    top: 100px;
+    left: 0;
+    z-index: 200;
+    transform: translateX(-200%);
+    transition: 1s;
+
+    &.active{
+        transform: translateX(0);
+    }
+}
+
+.sucsess-content{
+    background-color: var(--color1);
+    color: var(--color5);
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+}
