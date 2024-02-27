@@ -14,3 +14,24 @@
         background-color: var(--color1);
     }
 }
+
+.sucsess-wrapper{
+    position: fixed;
+    top: 100px;
+    left: 0;
+    z-index: 200;
+    transition: 1s;
+    transform: translateX(-200%);
+
+    &.active{
+        transform: translateX(0);
+    }
+}
+
+.sucsess-content{
+    background-color: var(--color1);
+    color: var(--color5);
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+}

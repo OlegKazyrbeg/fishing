@@ -9,13 +9,6 @@ import PrimaryButton from '../../ui/buttons/primaryButton';
 import BasketTotal from './basketTotal/basketTotal';
 import { useState } from 'react';
 
-const Sucsessfull = () => (
-    <div>
-        <div className="sucsess-content">
-            <p>Ваша заявка отправлена!</p>
-        </div>
-    </div>
-)
 
 const Basket = () => {
     const { totalPrice, items } = useSelector(state => state.card)   
@@ -32,7 +25,7 @@ const Basket = () => {
     }
 
     if (!totalPrice) {
-        return <BasketEmpty />
+        return <BasketEmpty sucsess={sucsess} />
     }
 
     return (
@@ -63,10 +56,8 @@ const Basket = () => {
                     totalCount={totalCount}
                     cards={cards}
                     setSucsess={setSucsess}
+                    onClickClear={onClickClear}
                 />
-            </div>
-            <div className={sucsess ? 'sucsess-wrapper active' : 'sucsess-wrapper'}>
-                <Sucsessfull/>
             </div>
         </section>
     );

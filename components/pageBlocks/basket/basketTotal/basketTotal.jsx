@@ -2,7 +2,7 @@ import './basketTotal.scss'
 import emailjs from '@emailjs/browser';
 import { useForm } from "react-hook-form"
 
-const BasketTotal = ({ setFormContent, cards, totalCount, totalPrice, setSucsess }) => {
+const BasketTotal = ({ setFormContent, cards, totalCount, totalPrice, setSucsess, onClickClear }) => {
 
     const getCartTemplate = (cards, totalCount, totalPrice) => (
         `<table style="width:100%; border-collapse: collapse;">
@@ -44,6 +44,7 @@ const BasketTotal = ({ setFormContent, cards, totalCount, totalPrice, setSucsess
 
         setSucsess(1) // Вызываем модальное окно
         setFormContent(0) // убираем форму
+        onClickClear()
 
         await emailjs.send(serviceId, templateId, templateParams, '46P-uyZXOGwPLne__') // Замените на ваш идентификатор пользователя
         .then(() => {
