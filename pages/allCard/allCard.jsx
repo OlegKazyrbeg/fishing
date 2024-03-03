@@ -40,7 +40,7 @@ const AllCard = () => {
         setMessage(1)
         setTimeout(() => {
             setMessage(0)
-        }, 1000)
+        }, 3000)
     }  
 
     return ( 
@@ -64,7 +64,7 @@ const AllCard = () => {
                                 className={message ? 'added active' : 'added'}
                                 initial={{x: 0, opacity: 0 }}
                                 animate={{x: 60, opacity: 1}}
-                                transition={{duration: 0.35}}>
+                                transition={{duration: .35}}>
                                 <MessageAdd/>
                             </motion.div>
                         </button>

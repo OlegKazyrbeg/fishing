@@ -23,7 +23,7 @@ const Card = ({ image, name, price, id }) => {
         setMessage(1)
         setTimeout(() => {
             setMessage(0)
-        }, 1000);
+        }, 3000);
     }  
 
     return ( 
