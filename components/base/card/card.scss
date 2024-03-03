@@ -64,3 +64,14 @@
         }
     }
 }
+
+.message{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+
+    &.active{
+        display: block;
+    }
+}

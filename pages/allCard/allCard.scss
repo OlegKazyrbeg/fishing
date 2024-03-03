@@ -1,9 +1,9 @@
-.card__all{
+.card-all{
     position: relative;
     top: 80px;
     padding: 65px 0 130px 0;
 
-    & .title{
+    & .card-title{
         font-size: 32px;
         text-transform: uppercase;
         font-weight: 600;
@@ -16,7 +16,7 @@
     }
 
     & .card{
-        &__top{
+        &-top{
             display: flex;
             gap: 45px;
 
@@ -27,7 +27,7 @@
             }
         }
 
-        &__description{
+        &-description{
             position: relative;
             top: 15px;
             display: flex;
@@ -36,14 +36,14 @@
             font-size: 20px;
         }
 
-        &__bottom{
+        &-bottom{
             margin-top: 15px;
             max-width: 520px;
             display: flex;
             align-items: center;
             justify-content: space-between;
 
-             & div{
+             &-total{
                 font-size: 24px;
                 color: var(--color1);
 
@@ -54,6 +54,7 @@
              }
 
              & button{
+                position: relative;
                 width: 50%;
                 font-size: 12px;
                 padding: 13px 20px;
@@ -68,5 +69,16 @@
                 }
              }
         }
+    }
+}
+
+.added{
+    position: absolute;
+    right: 0;
+    top: 12px;
+    display: none;
+
+    &.active{
+        display: block;
     }
 }

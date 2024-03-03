@@ -3,10 +3,11 @@ import { useDispatch } from 'react-redux';
 import { addItem } from '../../../redux/slices/cardSlice';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 import MessageAdd from './messageAdd/messageAdd'
 
 const Card = ({ image, name, price, id }) => {
-    const [message, setMessage] = useState(0)
+    const [ message, setMessage ] = useState(0)
     const dispath = useDispatch()
 
     const onClickAdd = () =>{
@@ -17,12 +18,12 @@ const Card = ({ image, name, price, id }) => {
             image,  
         }
 
-    dispath(addItem(item))
-    setMessage(1)
+        dispath(addItem(item))
 
-    setTimeout(() => {
-        setMessage(0)
-    }, 1000);
+        setMessage(1)
+        setTimeout(() => {
+            setMessage(0)
+        }, 1000);
     }  
 
     return ( 
@@ -35,7 +36,13 @@ const Card = ({ image, name, price, id }) => {
                 <div className="category-card-bottom row">
                     <div className="category-card-price">{price} руб.</div>
                     <button onClick={onClickAdd} className="category-card-button">ДОБАВИТЬ</button>
-                    <MessageAdd message={message} />
+                    <motion.div 
+                        className={message ? 'message active' : 'message'}
+                        initial={{y: -9, opacity: 0 }}
+                        animate={{y: -20, opacity: 1}}
+                        transition={{duration: .35}}>
+                        <MessageAdd/>
+                    </motion.div>
                 </div>
             </div>
         </article>
