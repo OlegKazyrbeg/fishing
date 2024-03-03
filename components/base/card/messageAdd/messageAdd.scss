@@ -1,0 +1,13 @@
+.message-add{
+    color: var(--color3);
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    z-index: 200;
+    display: none;
+    
+    &.active{
+        display: block;
+    }
+}

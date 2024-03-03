@@ -1,4 +1,4 @@
-import { PATHS } from '../../router';
+import { PATHS } from '../../../router';
 import './footer.scss'
 import { Link } from 'react-router-dom';
 

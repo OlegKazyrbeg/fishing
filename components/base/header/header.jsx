@@ -1,4 +1,4 @@
-import { PATHS } from '../../router';
+import { PATHS } from '../../../router';
 import './header.scss'
 import { Link } from 'react-router-dom';
 import { useState } from 'react';

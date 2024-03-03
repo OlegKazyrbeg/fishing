@@ -1,8 +1,6 @@
 import './catalogContent.scss'
-
 import CatalogButtons from "./catalogButtons/catalogButtons";
-import Card from '../../base/card';
-
+import Card from '../../base/card/card';
 import { setCategoryId } from '../../../redux/slices/filterSlice';
 import { useEffect } from 'react';
 import { fetchItems } from "../../../redux/slices/getSlice";
@@ -35,11 +33,13 @@ const CatalogContent = () => {
             <div className="container">
                 <CatalogButtons value={categoryId} onClickCategory={onClickCategory}/>
                 <div className="catalog-content row">
-                    {items.map((obj) =>(<Card key={obj.id} {...obj}/>))}
+                    {items.map((obj) =>(
+                        <Card key={obj.id} {...obj}/>
+                    ))}
                 </div>
             </div>
         </section>
-     );
+     ); 
 }
  
 export default CatalogContent;

@@ -1,6 +1,6 @@
 import { Navigation, A11y, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Card from '../../../base/card';
+import Card from '../../../base/card/card';
 import axios from 'axios'
 import { useState, useEffect } from 'react';
 

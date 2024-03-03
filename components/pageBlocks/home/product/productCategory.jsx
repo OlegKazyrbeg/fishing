@@ -1,4 +1,4 @@
-import Card from "../../../base/card";
+import Card from "../../../base/card/card";
 import ProductBtn from "./productBtn";
 
 import { setCategoryId } from "../../../../redux/slices/filterSlice";
