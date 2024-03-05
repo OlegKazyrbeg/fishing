@@ -1,6 +1,6 @@
 .card-all{
     position: relative;
-    top: 80px;
+    top: 60px;
     padding: 65px 0 130px 0;
 
     & .card-title{
@@ -9,6 +9,10 @@
         font-weight: 600;
         margin-bottom: 75px;
         text-align: center;
+
+        @media(max-width: 730px){
+            margin-bottom: 35px;
+        }
 
         @media(max-width: 578px){
             font-size: 28px;
@@ -20,10 +24,30 @@
             display: flex;
             gap: 45px;
 
+            @media(max-width:1000px){
+                gap: 20px;
+            }
+
+            @media(max-width:730px){
+                flex-direction: column;
+            }
+
+            &-image{
+                text-align: center;
+            }
+
             & img{
                 max-width: 500px;
                 padding: 10px;
                 background-color: #EEEEEE;
+
+                @media(max-width:1000px){
+                    max-width: 300px;
+                }
+
+                @media(max-width:730px){
+                    max-width: 70%;
+                }
             }
         }
 
@@ -34,6 +58,21 @@
             flex-direction: column;
             gap: 15px;
             font-size: 20px;
+
+            @media(max-width:730px){
+                top: 0;
+            }
+
+            @media(max-width:1000px){
+                font-size: 16px;
+            }
+
+            & p{
+                @media(max-width:730px){
+                    line-height: 1.5;
+                    text-align: justify;
+                }
+            }
         }
 
         &-bottom{
@@ -42,10 +81,20 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            flex-wrap: wrap;
+
+            @media(max-width:730px){
+                margin-top: 25px;
+                max-width: inherit;
+            }
 
              &-total{
                 font-size: 24px;
                 color: var(--color1);
+
+                @media(max-width:730px){
+                    font-size: 20px;
+                }
 
                 & span{
                     color: var(--color3);
@@ -62,6 +111,11 @@
                 transition: 0.5s ease;
                 background-color: var(--color1);
                 color: var(--color5);
+
+                @media(max-width:450px){
+                    width: 100%;
+                    margin-top: 10px;
+                }
         
                 &:hover{
                     background-color: #cacaca;
@@ -75,10 +129,13 @@
 .added{
     position: absolute;
     right: 0;
-    top: 12px;
-    display: none;
+    bottom: -23%;
+    opacity: 0;
+    transform: translateY(0);
+    transition: 0.35s;
 
     &.active{
-        display: block;
+        opacity: 1;
+        transform: translateY(75%)
     }
 }

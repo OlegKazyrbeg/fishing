@@ -36,13 +36,9 @@ const Card = ({ image, name, price, id }) => {
                 <div className="category-card-bottom row">
                     <div className="category-card-price">{price} руб.</div>
                     <button onClick={onClickAdd} className="category-card-button">ДОБАВИТЬ</button>
-                    <motion.div 
-                        className={message ? 'message active' : 'message'}
-                        initial={{y: -9, opacity: 0 }}
-                        animate={{y: -20, opacity: 1}}
-                        transition={{duration: .35}}>
+                    <div className={message ? 'message active' : 'message'}>
                         <MessageAdd/>
-                    </motion.div>
+                    </div>
                 </div>
             </div>
         </article>

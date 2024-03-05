@@ -17,9 +17,10 @@ const CatalogContent = () => {
     }
 
     const getCard = async () =>{
+        const categoryType = 'category=all'
         const category = categoryId > 0 ? `type=${categoryId}` : ''
 
-        dispath(fetchItems({category}))
+        dispath(fetchItems({ category, categoryType }))
 
     }
 

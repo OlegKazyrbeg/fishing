@@ -5,10 +5,10 @@ import axios from 'axios'
 import { useState, useEffect } from 'react';
 
 const SwiperPopular = () => {
-    const [SliderItem, setSliderItem] = useState([]);
+    const [sliderItem, setSliderItem] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:3001/sliderItemPopular')
+        axios.get('http://localhost:3001/items?pre_category=popular')
           .then(response => setSliderItem(response.data))
           .catch(error => console.log(error));
       }, []);
@@ -28,9 +28,9 @@ const SwiperPopular = () => {
               },
         }}
       >
-        {SliderItem.map(item => 
+        {sliderItem.map(item => 
             <SwiperSlide key={item.id}>
-                <Card key={item.id} {...item}/>
+                <Card {...item}/>
             </SwiperSlide>)}
     </Swiper>
      );

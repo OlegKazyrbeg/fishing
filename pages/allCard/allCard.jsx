@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { addItem } from '../../redux/slices/cardSlice';
-import { motion } from 'framer-motion';
 import axios from 'axios';
 import MessageAdd from '../../components/base/card/messageAdd/messageAdd';
 import './allCard.scss'
@@ -15,21 +14,20 @@ const AllCard = () => {
     useEffect(() => {
         async function fetchItem() {
             try {
-                const { data } = await axios.get(`http://localhost:3001/itemCategory/` + id)
+                const { data } = await axios.get(`http://localhost:3001/items/` + id)
                 setItem(data)
             } catch (error) {
-                
+                alert('ошибка...')
             }}
             fetchItem()
     }, [])
 
     const dispath = useDispatch()
-    const name = item.name
-    const price = item.price
-    const image = item.image
+    const { name, price, image } = item
 
     const onClickAdd = () =>{
         const item = {
+            id,
             name,
             price,
             image,  
@@ -49,7 +47,9 @@ const AllCard = () => {
                 <h2 className="card-title">{name}</h2>
                 <article className="card">
                     <div className="card-top">
-                        <img src={image} alt="image" />
+                        <div className='card-top-image'>
+                            <img src={image} alt="image" />
+                        </div>
                         <div className="card-description">
                             <p>{item.desc1}</p>
                             <p>{item.desc2}</p>
@@ -60,13 +60,9 @@ const AllCard = () => {
                         <div className='card-bottom-total'>Цена за 1кг: <span>{price} руб.</span></div>
                         <button onClick={onClickAdd}>
                             ДОБАВИТЬ
-                            <motion.div
-                                className={message ? 'added active' : 'added'}
-                                initial={{x: 0, opacity: 0 }}
-                                animate={{x: 60, opacity: 1}}
-                                transition={{duration: .35}}>
+                            <div className={message ? 'added active' : 'added'}>
                                 <MessageAdd/>
-                            </motion.div>
+                            </div>
                         </button>
                     </div>
                 </article>
