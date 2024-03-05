@@ -15,10 +15,9 @@ const ProductCategory =  () => {
     }
 
     const getCard = async () =>{
-        const categoryType = 'category=all'
         const category = categoryId == 0 ? `type=1` : categoryId == 1 ? `type=3` : `type=2`
 
-        dispath(fetchItems({ category, categoryType}))
+        dispath(fetchItems({ category }))
 
     }
 

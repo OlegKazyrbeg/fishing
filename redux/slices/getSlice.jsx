@@ -4,7 +4,7 @@ import axios from 'axios'
 export const fetchItems = createAsyncThunk(
     'getCard/fetchItemsStatus',
     async (params) => {
-        const { category, categoryType } = params
+        const { category } = params
         const { data } = await axios.get(`http://localhost:3001/items?${category}`)
         return data
     },
