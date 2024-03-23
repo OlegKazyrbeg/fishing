@@ -6,7 +6,7 @@ const animation = {
     whileInView: { y: 0, opacity: 1},
 }
 
-const AboutTeamCard = ({ name, secondName, specialization }) => {
+const AboutTeamCard = ({ name, image, secondName, specialization }) => {
     return ( 
         <motion.article className="about-card row"
             variants={animation}
@@ -15,7 +15,7 @@ const AboutTeamCard = ({ name, secondName, specialization }) => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 , delay: 0.2 }}>
 
-            <img src="./public/aboutCard.png" alt="aboutCard" width={200}/>
+            <img src={image} alt="aboutCard" width={200}/>
             <div className="about-card-description">
                 <div className="about-card-name">{name} {secondName}</div>
                 <div className="about-card-specialization">{specialization}</div>
