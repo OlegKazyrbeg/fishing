@@ -1,8 +1,8 @@
 import './primaryButton.scss'
 
-const PrimaryButton = ({ children }) => {
+const PrimaryButton = ({ children, onClick }) => {
     return ( 
-        <button type='button' className="primary-button">{children}</button>
+        <button onClick={onClick} type='button' className="primary-button">{children}</button>
      );
 }
  

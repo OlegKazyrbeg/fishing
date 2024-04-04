@@ -27,7 +27,7 @@ const More = () => {
                     </article>
                     <article className="more-item">
                         <div className="more-description">
-                            <h1 className="more-description-title">Мидий</h1>
+                            <h1 className="more-description-title">Мидии</h1>
                             <p className="more-description-text">Богаты белками, железом, витаминами группы В и цинком. Они также содержат большое количество омега-3 жирных кислот, которые полезны для сердечно-сосудистой системы.</p>
                         </div>
                     </article>

@@ -10,7 +10,6 @@ const Header = () => {
     const totalCount = items.reduce((sum, obj) => sum +obj.count, 0)
 
     const [toggleMenu, setToggleMenu] = useState(false)
-    const [activeNav, setActiveNav] = useState(false)
 
     const navList = ['Каталог', 'О нас', 'Корзина']
 

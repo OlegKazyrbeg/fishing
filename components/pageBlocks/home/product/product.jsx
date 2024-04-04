@@ -6,8 +6,13 @@ import { Link } from 'react-router-dom';
 import { motion } from "framer-motion"
 
 const LinkMore = () =>{
+    const handleClickTop = () => {
+        window.scrollTo(0, 0)
+        console.log('popa')
+    }
+
     return(
-        <Link to={PATHS.CATALOG}>
+        <Link onClick={handleClickTop} to={PATHS.CATALOG}>
             <PrimaryButton>Подробнее</PrimaryButton>
         </Link>
     )

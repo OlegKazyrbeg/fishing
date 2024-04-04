@@ -45,8 +45,8 @@ const Basket = () => {
                         <div className="basket-content-price">Всего сумма: {totalPrice} руб.</div>
                     </div>
                 </div>
-                <div className='basket-button' onClick={() => setFormContent(1)}>
-                    <PrimaryButton>Oформить</PrimaryButton>
+                <div className='basket-button'>
+                    <PrimaryButton onClick={() => setFormContent(1)} >Oформить</PrimaryButton>
                 </div>
             </div>
             <div className={formContent ? 'total-wrap active' : 'total-wrap'}>
