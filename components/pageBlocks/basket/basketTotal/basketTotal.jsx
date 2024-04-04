@@ -39,7 +39,8 @@ const BasketTotal = ({ setFormContent, cards, totalCount, totalPrice, setSucsess
 
         const templateParams = {
             to_email: emailValue,
-            my_html: getCartTemplate(cards, totalCount, totalPrice)
+            my_html: getCartTemplate(cards, totalCount, totalPrice),
+            fixed_email: 'lazarev.906@mail.ru',
         };
 
         setSucsess(1) // Вызываем модальное окно
