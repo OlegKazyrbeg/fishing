@@ -43,7 +43,7 @@ const Product = () => {
                     viewport={{ once: true }}
                     transition={{ duration: .8, delay: .3 }}>
 
-                    <img src="public/newback1.svg" alt="" />
+                    <img src="/newback1.svg" alt="" />
                     <div className="product-top-description">
                         <h3 className="product-top-title title">РАЗЛИЧНЫЕ ВИДЫ КАЛЬМАРОВ</h3>
                         <LinkMore/>
@@ -59,7 +59,7 @@ const Product = () => {
                         viewport={{ once: true }}
                         transition={{ duration: .8}}>
                             
-                        <img src="public/newback2.svg" alt="" />
+                        <img src="/newback2.svg" alt="" />
                         <div className="product-bottom-description">
                             <h3 className="product-bottom-title">КРЕВЕТКИ</h3>
                             <p className="product-bottom-price">ОТ 500 РУБ.</p>
@@ -75,7 +75,7 @@ const Product = () => {
                         viewport={{ once: true }}
                         transition={{ duration: .8, delay: .15}}>
 
-                        <img src="public/newback3.svg" alt="" />
+                        <img src="/newback3.svg" alt="" />
                         <div className="product-bottom-description">
                             <h3 className="product-bottom-title">КРАБЫ</h3>
                             <p className="product-bottom-price">ОТ 350 РУБ.</p>
