@@ -3,7 +3,6 @@ import { useDispatch } from 'react-redux';
 import { addItem } from '../../../redux/slices/cardSlice';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import { motion } from 'framer-motion';
 import MessageAdd from './messageAdd/messageAdd'
 
 const Card = ({ image, name, price, id }) => {
