@@ -1,4 +1,4 @@
 [[redirects]]
   from = "/api/*"
-  to = "/server/db.json"
+  to = "server/db.json"
   status = 200
