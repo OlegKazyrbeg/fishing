@@ -28,9 +28,9 @@ const BasketCard = ({ image, name, price, count, id }) => {
             <div className="basket-card-right row">
                 <div className="basket-card-count row">
                     <div className="basket-card-count-top row">
-                        <button onClick={onCliclMinus} className="card-count-button row count-delete"><img src="./public/minus.svg" alt="убавить" /></button>
+                        <button onClick={onCliclMinus} className="card-count-button row count-delete"><img src="/minus.svg" alt="убавить" /></button>
                         <div className="card-count">{count}</div>
-                        <button onClick={onCliclPlus} className="card-count-button row count-add"><img src="./public/plus.svg" alt="добавить" /></button>
+                        <button onClick={onCliclPlus} className="card-count-button row count-add"><img src="/plus.svg" alt="добавить" /></button>
                     </div>
                     <div className="basket-card-price row">{price} руб.</div>
                 </div>

@@ -64,7 +64,7 @@ const BasketTotal = ({ setFormContent, cards, totalCount, totalPrice, setSucsess
         <div className="basket-total row">
             <div className="basket-total-content">
                 <div className="basket-total-image">
-                    <img src="./public/total.svg" alt="total-image" />
+                    <img src="/total.svg" alt="total-image" />
                 </div>
                 <form onSubmit={handleSubmit(handleSendEmail)} >
                     <label> Введите почту для отправки <br />
