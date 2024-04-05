@@ -2,7 +2,7 @@
     "items":[
     {
       "type": 1,
-      "image": "/public/card-image1.webp",
+      "image": "/card-image1.webp",
       "name": "Барабуля черноморская",
       "price": 890,
       "category" : "all",
@@ -14,7 +14,7 @@
     },
     {
       "type": 1,
-      "image": "/public/card-image12.svg",
+      "image": "/card-image12.svg",
       "name": "Сибас",
       "price": 1015,
       "category" : "all",
@@ -25,7 +25,7 @@
     },
     {
       "type": 1,
-      "image": "/public/card-image13.svg",
+      "image": "/card-image13.svg",
       "name": "Тунец",
       "price": 2420,
       "category" : "all",
@@ -37,7 +37,7 @@
     },
     {
       "type": 1,
-      "image": "/public/card-image14.svg",
+      "image": "/card-image14.svg",
       "name": "Форель",
       "price": 750,
       "category" : "all",
@@ -48,7 +48,7 @@
     },
     {
       "type": 3,
-      "image": "/public/card-image3.svg",
+      "image": "/card-image3.svg",
       "name": "Кальмар свежий",
       "price": 340,
       "category" : "all",
@@ -60,7 +60,7 @@
     },
     {
       "type": 3,
-      "image": "/public/card-image32.svg",
+      "image": "/card-image32.svg",
       "name": "Кальмар командорский / филе",
       "price": 1050,
       "category" : "all",
@@ -71,7 +71,7 @@
     },
     {
       "type": 2,
-      "image": "/public/card-image2.jpg",
+      "image": "/card-image2.jpg",
       "name": "Краб королевский / целый",
       "price": 3200,
       "category" : "all",
@@ -82,7 +82,7 @@
     },
     {
       "type": 2,
-      "image": "/public/card-image22.svg",
+      "image": "/card-image22.svg",
       "name": "Краб стригун / конечности",
       "price": 1300,
       "category" : "all",
@@ -93,7 +93,7 @@
     },
     {
       "type": 2,
-      "image": "/public/card-image23.svg",
+      "image": "/card-image23.svg",
       "name": "Краб египетский / синий",
       "price": 2150,
       "category" : "all",

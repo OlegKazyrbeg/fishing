@@ -40,14 +40,14 @@ const Header = () => {
                             <button 
                                 onClick={() => setToggleMenu(!toggleMenu)}  
                                 className='close-menu'>
-                                <img src="public/closeburger.svg" alt="" />
+                                <img src="/closeburger.svg" alt="" />
                             </button>
                         </ul>
                     </nav>
                     <button 
                         onClick={() => setToggleMenu(!toggleMenu)} 
                         className="open-menu">
-                        <img src="public/openburger.svg" alt="" />
+                        <img src="/openburger.svg" alt="" />
                     </button>
                 </div>
             </div>
