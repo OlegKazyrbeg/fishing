@@ -34,7 +34,7 @@ const About = () => {
                         transition={{ duration: 0.8 , delay: 0.75 }}>
                         <div className="about-we-description">
                             <p className="about-we-text"><span>Наше видение</span> - продвигать здоровый образ жизни и кулинарные возможности, которые предлагают нам океаны.</p>
-                            <img src="./public/about.jpg" alt="aboutTopImg" />
+                            <img src="/about.jpg" alt="aboutTopImg" />
                         </div>
                     </motion.div>
                 </div>
