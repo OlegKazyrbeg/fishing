@@ -14,7 +14,7 @@ const AllCard = () => {
     useEffect(() => {
         async function fetchItem() {
             try {
-                const { data } = await axios.get(`http://localhost:3001/items/` + id)
+                const { data } = await axios.get(`https://65a16efc600f49256fb1a855.mockapi.io/data/items/` + id)
                 setItem(data)
             } catch (error) {
                 alert('ошибка...')
