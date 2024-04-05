@@ -8,7 +8,7 @@ const SwiperPopular = () => {
     const [sliderItem, setSliderItem] = useState([]);
 
     useEffect(() => {
-        axios.get('https://appetitfish.netlify.app/api/items?pre_category=popular')
+        axios.get('https://appetitfish.netlify.app/items?pre_category=popular')
           .then(response => setSliderItem(response.data))
           .catch(error => console.log(error));
       }, []);
